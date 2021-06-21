@@ -585,6 +585,12 @@ header .hero-image .photo-bg {
   
 padding-bottom: 25px;
 }
+.hidden{
+  opacity:0;
+}
+.visible{
+  opacity:1;
+}
 /* Hidden Items */
 /*  
 .search-box {

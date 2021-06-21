@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JATIN IYER</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//unpkg.com/viewport-checker@^2"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="search-box">
@@ -98,7 +102,7 @@
       </div>
       </div>
     </div>
-    <section class="home-blog bg-sand">
+    <section class="home-blog bg-sand"id="scroll">
       <div class="container">
       <!-- section title -->
       <div class="row justify-content-md-center">
@@ -175,7 +179,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="scroll">
     <div class="container-fluid bg-1 text-center" id="about">
       <div class="row justify-content-md-center">
         <div class="col-xl-5 col-lg-6 col-md-8">
@@ -192,7 +196,7 @@
       <p class="kaala" >i am pursuing my Computer engineering bachelors degree from SIES Graduate School of Technology,Mumbai </p>
       <p class="kaala">Here are my skills:-</p>
         <br>
-        <div class="container ">
+        <div class="container "id="scroll">
           <div class="row">
             <div class="col-md-15">
                 <h3 class="progress-title">HTML5 - 60%</h3>
@@ -234,7 +238,7 @@
 
 
   </section>
-  <div class="container-fluid sectback"id="contact">
+  <div class="container-fluid sectback"id="contact scroll">
     <div class="container contact-form shadow-lg" style="border-radius:50px ;">
       <div class="contact-image">
           <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
@@ -260,6 +264,7 @@
                   <div class="form-group">
                       <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
                       <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_next" value="https://aceandro2812.github.io/JatinIyer/">
                   </div>
               </div>
           </div>
@@ -275,7 +280,14 @@
 
     <script src="main.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+    <script>
+      jQuery(document).ready(function() {
+        jQuery('#scroll').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn',
+            offset: 100
+           });
+    });
+    </script>
     <script>
       
       var app = document.getElementById('app');
