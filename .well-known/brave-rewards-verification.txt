@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jatiniyer.ml
+Token: a34a720472eacbaa2af5cb9c8c9aeffebf2adf0b6caabcfbfa6969464e76c35f
